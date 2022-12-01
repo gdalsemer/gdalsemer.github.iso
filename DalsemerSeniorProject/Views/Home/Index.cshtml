@@ -1,0 +1,54 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<!--THis function right here is a javascript function that
+    disables the use of the back button upon a successful logout.
+    I struggle to understand how and why this works when placed
+    in a seperate page from the login page.  My theroy is that
+    it has something to do with how the application loads the index
+    page upon running the application.-->
+<head>
+    <!--
+        <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload=function(){null};
+        </script>
+        -->
+    </head>
+ 
+<style>
+    body {
+        background-color: lightblue;
+    }
+</style>
+
+</html>
+
+
+
+<div class="row justify-content-md-start">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <br/>
+                <div class="text-center"
+                     <h1 style="font-size: 37px">Welcome</h1>
+                </div>
+            </div>
+            <div class="card-body">
+                @if (Session["FullName"] != null)
+                {
+                    <p>Name: @Session["FullName"].ToString()</p>
+                    <p>Email: @Session["Email"].ToString()</p>
+                    <a href="@Url.Action("Logout","Home")" class="btn btn-warning">Logout</a>
+                }
+            </div>
+        </div>
+        
+    </div>
+</div>

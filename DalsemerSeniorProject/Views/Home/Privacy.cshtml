@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Privacy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        .parallax {
+            /* The image used */
+            background-image: url("../Content/Images/image.jpg");
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width" />
+    <title>Privacy</title>
+    <h1>Privacy</h1>
+    <br />
+</head>
+<body>
+    <div>
+        </div>
+
+    <div class="parallax"></div>
+    <div style="height:1000px;background-color:lightblue;font-size:26px">
+        <p1>In our web application, a user needs to provide the following:</p1>
+        <ul>
+            <li>Valid Email and Secured Password</li>
+            <li>First Name and Last Name</li>
+        </ul>
+        <p2>We will store this information inside out secured database that can be view by moderators and by the account holder.</p2><br />
+        <p3>We securely store information like passwords in a way that no one can see a user's actual password.</p3> <br /><br />
+        <p>A secure Password is defined as:
+        <ul>
+            <li>8 minimum characters</li>
+            <li>A capital and lower case letter</li>
+            <li>One special character.</li>
+        </ul>
+        </p>
+        <p4>We accomplish this by simply hashing the password when a user creates a new login so that the database never sees the original password.</p4>
+        <p5>We also require users upload information based on their caloric intake for each day.  This is stored inside the database.</p5><br /><br />
+        <p6>A user must provide an email if they wish to join our community to validate the user.</p6><br/><br />
+        <p7>No payment is required for use of this site or any of its features.  If you paid in any way, <strong>you were scammed</strong>.</p7>
+
+    </div>
+
+</body>
+</html>

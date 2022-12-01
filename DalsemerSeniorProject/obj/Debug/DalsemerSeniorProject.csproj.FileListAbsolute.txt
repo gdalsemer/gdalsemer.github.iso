@@ -1,0 +1,2 @@
+C:\Users\gdals\Desktop\DalsemerSeniorProject\DalsemerSeniorProject\obj\Debug\DalsemerSeniorProject.csproj.AssemblyReference.cache
+C:\Users\gdals\Desktop\DalsemerSeniorProject\DalsemerSeniorProject\obj\Debug\DalsemerSeniorProject.csproj.CoreCompileInputs.cache

@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+
+
+@{
+    var db = Database.Open("localhost");
+    var data = db.Query("SELECT Calories, Time FROM Calories");
+    var myChart = new Chart(width: 600, height: 400)
+        .AddTitle("Product Sales")
+        .DataBindTable(dataSource: data, xField: "Name")
+        .Write();
+}
+@{
+Database database = DatabaseFactory.CreateDatabase("Db_Entities");
+
+using(DbConnection connection = database.CreateConnection())
+{
+    if(connection is SqlConnection sqlConnection)
+    {
+        // do something with sqlConnection
+    }
+    else
+    {
+       throw new InvalidOperationException("Connection is not to a SQL Database");
+    }
+}
+}
